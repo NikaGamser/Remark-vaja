@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spletna predstavitev z orodjem REMARK</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+layout: true
+background-image: url(roze.avif)
+background-size: contain
+background-repeat: no-repeat
+
+---
+class: center, middle
+
+# Spletna predstavitev z orodjem REMARK
+## Podnaslov
+
+---
+class: left, bottom
+
+#Remark
+
+je spletno orodje, ki omogoča hitro organizacijo zapiskov ...
+
+--
+count: false
+
+Več o možnostih, ki jih ponuja remark:
+- na [modelni predstavitvi](https://remarkjs.com/#1)
+- na [projektni strani](https://github.com/gnab/remark)
+- v [natančnejši dokumentaciji](https://github.com/gnab/remark/wiki)
+
+---
+name:ponovi
+# PLAN
+
+1. Introduction
+2. Deep-dive
+3. ...
+
+---
+#Dodatne možnosti
+###Matematika
+Vnašamo lahko matematične formule kot v $\LaTeX$ -u, tako sredi besedila: $4 + a^2 = \sin(\pi)$.
+Ali pa takole:
+$$\frac{a+b}{2}$$
+---
+###Slika
+Zmoti ozadje, ker je prevelika.
+![slika](OIP.jpg)
+---
+name:nazaj-na-sliko
+###Slika na boljši način
+Sploh, ker ne zmoti ozadja.
+.right[<img src ="OIP.jpg" width="300">]
+
+???
+OPORNE TOČKE
+<!-- komentar: OPORNE TOČKE DAJ NA KONEC SLIDA v visual studio codu -->
+
+---
+template:ponovi
+
+# Ponovitev iz kakšne prejšnje prosojnice
+
+
+
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
+  </body>
+</html>
